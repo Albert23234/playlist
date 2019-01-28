@@ -25,7 +25,7 @@ links.forEach(function(links) {
 });
 
 function emptySongInfo(){
- $("#imgLinks").empty();
+ $("#images").empty();
     $("#songs").empty();
     $("#artists").empty();
     $("#links").empty();
@@ -38,9 +38,17 @@ function emptySongInfo(){
 
 function addSongInfo(){
     // BELOW write the code to add new items to each of the arrays.
+    
+    imgLinks.push($("#image").val());
+    songs.push($("#song").val());
+    artist.push($("#artist").val());
+    links.push($("#link").val());
+    songLength.push($("#length").val());
 
-
+    console.log($("#image").val());
+    console.log(imgLinks);
 }
+
 
 $("#add").click(function() {
     emptySongInfo();
