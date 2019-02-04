@@ -28,6 +28,24 @@ function displaySongInfo(){
     links.forEach(function(links) {
          $("#links").append("<a href=" + links + ">" + "click here to go to the song" + "</a>")
     });
+    
+    artists.forEach(function(artist,index ){
+        var button = document.createElement('button');
+        button.innerHTML = 'x';
+        button.onclick = removeSong.bind(this, index);
+        $("#remove").append(button);
+        
+        
+    });
+}
+function removeSong(index){
+     artists.splice(index, 1);
+            links.splice(index, 1);
+            songs.splice(index, 1);
+            imgLinks.splice(index, 1);
+            songLength.splice(index, 1);
+            emptySongInfo();
+            displaySongInfo();
 }
 function emptySongInfo(){
     $("#images").empty();
@@ -35,6 +53,7 @@ function emptySongInfo(){
     $("#artists").empty();
     $("#links").empty();
     $("#songLength").empty();
+    $("#remove").empty();
 }
 
 

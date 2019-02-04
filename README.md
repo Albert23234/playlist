@@ -24,7 +24,7 @@
 ### JS
 - [ ] Add a forEach loop in the displaySongInfo function to display the data from each of your arrays in the correct div
 - [ ] Update the code to correctly append HTML Elements (img, p, a tags) using jQuery
-- [ ] Use jQuery to complete the body of the emptySongInfo function
+- [ ] Use jQuery to complete the body of the empty[SongInfo function
 ### Wrap
 - [ ] Push your changes!
 
